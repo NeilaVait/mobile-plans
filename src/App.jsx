@@ -9,7 +9,15 @@ class App extends Component {
     super(props);
     this.state = {
       noCommitment: false,
+      mobile1: {},
     };
+  }
+
+  async componentDidMount() {
+    //parsisiunciam plan1 json faila ir issaugom state
+    const response = await fetch('/data/plan1.json');
+    this.state.mobile1 = await response.json();
+    console.log('data', this.state.mobile1);
   }
 
   handleRadio = (value) => {
@@ -33,7 +41,7 @@ class App extends Component {
             <HaveServices></HaveServices>
           </div>
           <main className="plan-cards">
-            <MobilePlan></MobilePlan>
+            <MobilePlan mobile1={this.state.mobile1}></MobilePlan>
           </main>
         </div>
       </div>

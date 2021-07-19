@@ -6,15 +6,16 @@ class MobilePlan extends Component {
   render() {
     return (
       <div className="mobile-plan">
-        <h6 className="plan__header">Mobilus START 1</h6>
-        <h2 className="plan__dataAllow">1 GB</h2>
-        <small className="plan__dataEu">Iš jų 1 GB ES/EEE</small>
+        <h6 className="plan__header">{this.props.mobile1.headerTitle}</h6>
+        <h2 className="plan__dataAllow">{this.props.mobile1.dataAlowed} GB</h2>
+        <small className="plan__dataEu">Iš jų {this.props.mobile1.dataEU} GB ES/EEE</small>
         <p className="plan__min-sms">Neribotos MIN ir SMS</p>
         <div className="plan__features">
           <div className="hr"></div>
           <ul className="features__list">
-            <li>M. parašas (6 mėn.)</li>
-            <li>Įrangos draudimas (3 mėn.)</li>
+            {/* {this.props.mobile1.features.map((f) => (
+              <li>{f}</li>
+            ))} */}
           </ul>
         </div>
         <div className="hr"></div>
