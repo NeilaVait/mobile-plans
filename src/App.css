@@ -121,3 +121,23 @@
   background-color: rgba(34, 34, 34, 0.04);
   flex-basis: 50%;
 }
+
+.radio__bubble[type='radio'] {
+  border: 0px;
+  width: 20%;
+  height: 2em;
+  color: #900ae3;
+  display: inline;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.radio-container svg {
+  margin-right: 0.5rem;
+}

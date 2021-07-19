@@ -6,18 +6,15 @@ class Commitment extends Component {
     return (
       <div className="commitment-component">
         <div className="c__selection">
-          <span className="c__select">
-            <CustomRadio checked={!this.props.noCommitment} onRadio={this.props.handleRadio}>
-              24 men.
-            </CustomRadio>
-          </span>
+          <CustomRadio value="commit" checked={!this.props.noCommitment} handleRadio={this.props.handleRadio}>
+            24 men. sutartis
+          </CustomRadio>
         </div>
+
         <div className="c__selection">
-          <span className="c__select">
-            <CustomRadio checked={this.props.noCommitment} onRadio={this.props.handleRadio}>
-              Be isipareigojimu
-            </CustomRadio>
-          </span>
+          <CustomRadio value="no-commit" checked={this.props.noCommitment} handleRadio={this.props.handleRadio}>
+            Be isipareigojimu
+          </CustomRadio>
         </div>
       </div>
     );

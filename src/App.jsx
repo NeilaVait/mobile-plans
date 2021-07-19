@@ -12,6 +12,16 @@ class App extends Component {
     };
   }
 
+  handleRadio = (value) => {
+    const stateCopy = { ...this.state };
+    if (value === 'commit') {
+      stateCopy.noCommitment = false;
+    } else {
+      stateCopy.noCommitment = true;
+    }
+    this.setState(stateCopy);
+  };
+
   render() {
     return (
       <div className="App">
@@ -19,7 +29,7 @@ class App extends Component {
           <h1>Mobiliojo rysio planai</h1>
           <p>Visos Lietuvoje turimo plano naudos galioja Baltijos ir Skandinavijos šalyse.</p>
           <div className="controls d-flex">
-            <Commitment noCommitment={this.state.noCommitment}></Commitment>
+            <Commitment handleRadio={this.handleRadio} noCommitment={this.state.noCommitment}></Commitment>
             <HaveServices></HaveServices>
           </div>
           <main className="plan-cards">
