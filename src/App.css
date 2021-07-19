@@ -25,8 +25,9 @@
   background-color: #fff;
   /* temp */
   max-width: 280px;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .plan__header {
@@ -79,6 +80,28 @@
   border-radius: 50px;
   font-size: medium;
   font-weight: bold;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}
+
+.features__list li {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.features__list li:before {
+  content: '✓';
+  color: rgb(121, 190, 17);
+  margin-right: 1rem;
+}
+
+.plan__features .hr {
+  height: 1px;
+  background-color: #f2f2f2;
+  margin: 0.5rem -100%;
 }
 
 /* variables */

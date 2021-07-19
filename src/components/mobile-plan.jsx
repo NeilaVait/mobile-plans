@@ -10,7 +10,14 @@ class MobilePlan extends Component {
         <h2 className="plan__dataAllow">1 GB</h2>
         <small className="plan__dataEu">Iš jų 1 GB ES/EEE</small>
         <p className="plan__min-sms">Neribotos MIN ir SMS</p>
-        <div className="plan__features">sarasas</div>
+        <div className="plan__features">
+          <div className="hr"></div>
+          <ul className="features__list">
+            <li>M. parašas (6 mėn.)</li>
+            <li>Įrangos draudimas (3 mėn.)</li>
+          </ul>
+        </div>
+        <div className="hr"></div>
         <div className="plan__bottom">
           <div className="bottom__price-part">
             <h3 className="bottom__price">
