@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
 /* components */
 
 .App {
@@ -104,4 +109,15 @@
   margin: 0.5rem -100%;
 }
 
-/* variables */
+/* commitment component */
+
+.commitment-component {
+  display: flex;
+  width: 50%;
+  gap: 2px;
+}
+
+.c__selection {
+  background-color: rgba(34, 34, 34, 0.04);
+  flex-basis: 50%;
+}
