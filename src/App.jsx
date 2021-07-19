@@ -13,15 +13,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Mobiliojo rysio planai</h1>
-        <p>Visos Lietuvoje turimo plano naudos galioja Baltijos ir Skandinavijos šalyse.</p>
-        <div className="controls">
-          <Commitment></Commitment>
-          <HaveServices></HaveServices>
+        <div className="container">
+          <h1>Mobiliojo rysio planai</h1>
+          <p>Visos Lietuvoje turimo plano naudos galioja Baltijos ir Skandinavijos šalyse.</p>
+          <div className="controls">
+            <Commitment></Commitment>
+            <HaveServices></HaveServices>
+          </div>
+          <main className="plan-cards">
+            <MobilePlan></MobilePlan>
+          </main>
         </div>
-        <main className="plan-cards">
-          <MobilePlan></MobilePlan>
-        </main>
       </div>
     );
   }

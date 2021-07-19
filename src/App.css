@@ -1,17 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
-/* common */
+/* reset */
 
 * {
   box-sizing: border-box;
 }
 
-.App {
-  font-family: 'Roboto', sans-serif;
+/* common */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-body {
+/* components */
+
+.App {
+  font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2;
+  color: #222;
+}
+
+.mobile-plan {
+  background-color: #fff;
+  /* temp */
+  max-width: 280px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.plan__header {
+  font-weight: normal;
+  color: grey;
+  margin-top: 1rem;
+}
+
+.plan__dataAllow {
+  margin-bottom: 0.5rem;
+}
+
+.plan__dataEu {
+  font-size: 0.8rem;
+}
+
+.plan__min-sms {
+  font-size: 0.9rem;
+}
+
+.plan__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.bottom__price-part {
+  width: 50%;
+}
+
+.bottom__price {
+  margin-bottom: 0;
+}
+
+.bottom__price > span {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.bottom__term {
+  font-size: 0.7rem;
+  color: rgba(51, 51, 51, 0.753);
+}
+
+.plan__cta {
+  width: 50%;
+  background-color: #900ae3;
+  color: snow;
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: 50px;
+  font-size: medium;
+  font-weight: bold;
 }
 
 /* variables */
