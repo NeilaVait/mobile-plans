@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <h1>Mobiliojo rysio planai</h1>
+          <h1>Mobiliojo ryšio planai</h1>
           <p>Visos Lietuvoje turimo plano naudos galioja Baltijos ir Skandinavijos šalyse.</p>
           <div className="controls d-flex">
             <Commitment handleRadio={this.handleRadio} noCommitment={this.state.noCommitment}></Commitment>
