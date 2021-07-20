@@ -1,0 +1,191 @@
+[
+    {
+      "headerTitle": "Mobilus START 1",
+      "dataAllowed": 1,
+      "dataServices": 2,
+      "dataEU": 1,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn.)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn.)"
+        }
+      ],
+      "price": {
+        "commitment": 9,
+        "noCommitment": 9.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 mėn. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus FLEXI 4",
+      "dataAllowed": 4,
+      "dataServices": 8,
+      "dataEU": 4,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn.)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn.)"
+        },
+        { "title": "GB perkėlimas į kitą mėn." }
+      ],
+      "price": {
+        "commitment": 12,
+        "noCommitment": 13.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 mėn. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus FLEXI 8",
+      "dataAllowed": 8,
+      "dataServices": 16,
+      "dataEU": 8,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn.)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn.)"
+        },
+        { "title": "Kelionių draudimas (3 mėn.)" },
+        { "title": "GB perkėlimas į kitą men." }
+      ],
+      "price": {
+        "commitment": 16,
+        "noCommitment": 17.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 men. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus FLEXI 12",
+      "dataAllowed": 12,
+      "dataServices": 24,
+      "dataEU": 12,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 men.)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn.)"
+        },
+        { "title": "Kelionių draudimas (3 mėn.)" },
+        { "title": "GB perkėlimas į kitą mėn." }
+      ],
+      "price": {
+        "commitment": 19,
+        "noCommitment": 21.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 mėn. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus FLEXI 20",
+      "dataAllowed": 20,
+      "dataServices": 40,
+      "dataEU": 15,
+      "worldwide": 500,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn)"
+        },
+        { "title": "Kelionių draudimas (3 mėn.)" },
+        { "title": "GB perkėlimas į kitą mėn." }
+      ],
+      "price": {
+        "commitment": 23,
+        "noCommitment": 25.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 men. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus FLEXI 40",
+      "dataAllowed": 40,
+      "dataServices": 80,
+      "dataEU": 16,
+      "worldwide": 500,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn)"
+        },
+        { "title": "Kelionių draudimas (3 mėn.)" },
+        { "title": "GB perkėlimas į kitą mėn." }
+      ],
+      "price": {
+        "commitment": 19,
+        "noCommitment": 21.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 mėn. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    },
+    {
+      "headerTitle": "Mobilus NERIBOTAI",
+      "dataAllowed": "Neriboti",
+      "dataServices": "Neriboti",
+      "dataEU": 19,
+      "worldwide": 500,
+      "minSms": "Neribotos MIN ir SMS",
+      "features": [
+        {
+          "title": "M. parašas (6 mėn)"
+        },
+        {
+          "title": "Įrangos draudimas (3 mėn)"
+        },
+        { "title": "Kelionių draudimas (3 mėn.)" },
+        { "title": "Pritaikytas 5G testavimui" }
+      ],
+      "price": {
+        "commitment": 29,
+        "noCommitment": 33.9
+      },
+      "period": "mėn",
+      "contractLength": {
+        "commitment": "24 mėn. sutartis",
+        "noCommitment": "Be įsipareigojimų"
+      },
+      "ctaButton": "Domina"
+    }
+]

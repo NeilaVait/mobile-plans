@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       noCommitment: false,
       mobile1: {},
+      allPlans: [],
     };
   }
 
@@ -17,8 +18,11 @@ class App extends Component {
     //parsisiunciam plan1 json faila ir issaugom state
     const response = await fetch('/data/plan1.json');
     const data = await response.json();
-    console.log('data', data);
     this.setState({ mobile1: data });
+
+    const resp = await fetch('/data/allPlans.json');
+    const plans = await resp.json();
+    this.setState({ allPlans: plans });
   }
 
   handleRadio = (value) => {
@@ -42,7 +46,10 @@ class App extends Component {
             <HaveServices></HaveServices>
           </div>
           <main className="plan-cards">
-            <MobilePlan noCommitment={this.state.noCommitment} mobile1={this.state.mobile1}></MobilePlan>
+            {this.state.allPlans &&
+              this.state.allPlans.map((p) => (
+                <MobilePlan key={p.headerTitle} noCommitment={this.state.noCommitment} mobile1={p}></MobilePlan>
+              ))}
           </main>
         </div>
       </div>

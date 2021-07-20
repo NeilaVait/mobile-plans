@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 class MobilePlan extends Component {
   state = {};
 
+  formatPrice(price) {
+    if (price) return (Math.round(price * 100) / 100).toFixed(2);
+  }
+
   render() {
     const { mobile1: m } = this.props;
     const { noCommitment } = this.props;
@@ -25,7 +29,8 @@ class MobilePlan extends Component {
         <div className="plan__bottom">
           <div className="bottom__price-part">
             <h3 className="bottom__price">
-              {noCommitment ? m.price?.noCommitment : m.price?.commitment} <span>€/{m.period}.</span>{' '}
+              {noCommitment ? this.formatPrice(m.price?.noCommitment) : this.formatPrice(m.price?.commitment)}{' '}
+              <span>€/{m.period}.</span>{' '}
             </h3>
             <small className="bottom__term">
               {noCommitment ? m.contractLength?.noCommitment : m.contractLength?.commitment}
