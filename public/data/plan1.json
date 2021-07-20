@@ -1,6 +1,6 @@
 {
   "headerTitle": "Mobilus START1",
-  "dataAlowed": 1,
+  "dataAllowed": 1,
   "dataEU": 1,
   "minSms": "Neribotos MIN ir SMS",
   "features": [
@@ -12,10 +12,13 @@
       }
   ],
   "price": {
-      "commitment": 9,
-      "noComitment": 9.9
-  },
-  "period": "men",
-  "contractLengh": 24,
+    "commitment": 9,
+    "noCommitment": 9.9
+},
+"period": "men",
+"contractLength": {
+    "commitment": "24 mėn. sutartis",
+    "noCommitment": "Be įsipareigojimų"
+},
   "ctaButton": "Domina"
 }

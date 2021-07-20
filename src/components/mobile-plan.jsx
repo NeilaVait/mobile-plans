@@ -3,30 +3,46 @@ import React, { Component } from 'react';
 class MobilePlan extends Component {
   state = {};
 
+  getContractLength() {
+    if (this.props.noCommitment === false) {
+      return this.props.mobile1.contractLength.commitment;
+    }
+    return this.props.mobile1.contractLength.noCommitment;
+  }
+
+  getContractPrice() {
+    if (this.props.noCommitment === false) {
+      return this.props.mobile1.price.commitment;
+    }
+    return this.props.mobile1.price.noCommitment;
+  }
+
   render() {
+    const { mobile1: m } = this.props;
+
     return (
       <div className="mobile-plan">
-        <h6 className="plan__header">{this.props.mobile1.headerTitle}</h6>
-        <h2 className="plan__dataAllow">{this.props.mobile1.dataAlowed} GB</h2>
-        <small className="plan__dataEu">Iš jų {this.props.mobile1.dataEU} GB ES/EEE</small>
-        <p className="plan__min-sms">Neribotos MIN ir SMS</p>
+        <h6 className="plan__header">{m.headerTitle}</h6>
+        <h2 className="plan__dataAllow">{m.dataAllowed} GB</h2>
+        <small className="plan__dataEu">Iš jų {m.dataEU} GB ES/EEE</small>
+        <p className="plan__min-sms">{m.minSms}</p>
         <div className="plan__features">
           <div className="hr"></div>
           <ul className="features__list">
-            {/* {this.props.mobile1.features.map((f) => (
-              <li>{f}</li>
-            ))} */}
+            {(m.features || []).map((f) => (
+              <li key={f.title}>{f.title}</li>
+            ))}
           </ul>
         </div>
         <div className="hr"></div>
         <div className="plan__bottom">
           <div className="bottom__price-part">
             <h3 className="bottom__price">
-              9,90 <span>€/mėn.</span>{' '}
+              {m.price && this.getContractPrice()} <span>€/mėn.</span>{' '}
             </h3>
-            <small className="bottom__term">24 mėn. sutartis</small>
+            <small className="bottom__term">{m.contractLength && this.getContractLength()}</small>
           </div>
-          <button className="plan__cta">Domina</button>
+          <button className="plan__cta">{m.ctaButton}</button>
         </div>
       </div>
     );

@@ -16,8 +16,9 @@ class App extends Component {
   async componentDidMount() {
     //parsisiunciam plan1 json faila ir issaugom state
     const response = await fetch('/data/plan1.json');
-    this.state.mobile1 = await response.json();
-    console.log('data', this.state.mobile1);
+    const data = await response.json();
+    console.log('data', data);
+    this.setState({ mobile1: data });
   }
 
   handleRadio = (value) => {
@@ -41,7 +42,7 @@ class App extends Component {
             <HaveServices></HaveServices>
           </div>
           <main className="plan-cards">
-            <MobilePlan mobile1={this.state.mobile1}></MobilePlan>
+            <MobilePlan noCommitment={this.state.noCommitment} mobile1={this.state.mobile1}></MobilePlan>
           </main>
         </div>
       </div>
