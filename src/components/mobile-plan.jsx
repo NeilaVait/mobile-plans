@@ -3,22 +3,9 @@ import React, { Component } from 'react';
 class MobilePlan extends Component {
   state = {};
 
-  getContractLength() {
-    if (this.props.noCommitment === false) {
-      return this.props.mobile1.contractLength.commitment;
-    }
-    return this.props.mobile1.contractLength.noCommitment;
-  }
-
-  getContractPrice() {
-    if (this.props.noCommitment === false) {
-      return this.props.mobile1.price.commitment;
-    }
-    return this.props.mobile1.price.noCommitment;
-  }
-
   render() {
     const { mobile1: m } = this.props;
+    const { noCommitment } = this.props;
 
     return (
       <div className="mobile-plan">
@@ -38,9 +25,11 @@ class MobilePlan extends Component {
         <div className="plan__bottom">
           <div className="bottom__price-part">
             <h3 className="bottom__price">
-              {m.price && this.getContractPrice()} <span>€/mėn.</span>{' '}
+              {noCommitment ? m.price?.noCommitment : m.price?.commitment} <span>€/{m.period}.</span>{' '}
             </h3>
-            <small className="bottom__term">{m.contractLength && this.getContractLength()}</small>
+            <small className="bottom__term">
+              {noCommitment ? m.contractLength?.noCommitment : m.contractLength?.commitment}
+            </small>
           </div>
           <button className="plan__cta">{m.ctaButton}</button>
         </div>
